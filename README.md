@@ -1,6 +1,11 @@
 # Robust Hierarchical Sparse Connectivity Patterns
 
-MATLAB based tool for extracting hierarchical Sparse Connectivity Patterns (hSCPs) while reducing the effects of covariates such as age, sex and site in multi-site datasets. Implementation of robust principal component analysis and stable principal component pursuit based on the following references:
+MATLAB based tool for extracting hierarchical Sparse Connectivity Patterns (hSCPs) while reducing the effects of covariates such as age, sex and site in multi-site datasets. Implementation of robust hSCPs based on the following references:
+
+- [1] Dushyant Sahoo and Christos Davatzikos. Learning Robust Hierarchical Patterns of Human Brain across Many fMRI Studies. NeurIPS 2021. https://ieeexplore.ieee.org/abstract/document/9285290
+- [2] Dushyant Sahoo and Christos Davatzikos. Extraction of hierarchical functional connectivity components in human brain using adversarial learning. https://arxiv.org/pdf/2104.10255.pdf
+- [3] Dushyant Sahoo et al.Generalizable Hierarchical Patterns for identifying MDD patients: A Multisite Study. (Under Review)
+- [4] Dushyant Sahoo, T. D. Satterthwaite, and Christos Davatzikos. Hierarchical extraction of functional connectivity components in human brain using resting-state fmri. TMI 2020. https://ieeexplore.ieee.org/abstract/document/9285290
 
 contact: sahoodushyant (at) gmail (dot) com
 
@@ -9,24 +14,12 @@ contact: sahoodushyant (at) gmail (dot) com
 - [2. Installation](#id-section2)
 - [3. Quick Start](#id-section3)
 
-**References**: If you are using ComBat for the harmonization of multi-site imaging data, please cite the following papers:
-
-
 ## Installation
 
-If you are not using a distribution like TeX Live or MikTeX, you can
-easily install the package by running (on a command line; the $ signals
-denotes the prompt and should not be typed):
+Requirements:
 
-    $ tex algorithms.dtx
-
-This should generate, among others, the files `algorithm.sty` and
-`algorithmic.sty`. To use them, just copy them to your texmf tree (or
-the local directory where the document you want to typeset resides).  If
-you would like to generate the documentation, just use, say:
-
-    $ pdflatex algorithms.dtx
-    $ pdflatex algorithms.dtx
+* ``MATLAB``
+* ``MATLAB Deep Learning Toolbox``
 
 
 ## Development and Support
