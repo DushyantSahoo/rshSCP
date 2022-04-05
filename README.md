@@ -19,6 +19,8 @@ Requirements:
 * ``MATLAB``
 * ``MATLAB Deep Learning Toolbox``
 
+The main algorithm depends on projection algorithm which needs to installed, is described in the upcoming section.
+
 ### Projection onto the intersection of the L1-ball and L-infinity-ball
 
 The projection folder contains a Matlab/Mex/C++ implementation of a linear time algorithm for the projection onto the intersection of the L1-ball and L-infinity-ball (box constraint) provided by A. Podosinnikova.
