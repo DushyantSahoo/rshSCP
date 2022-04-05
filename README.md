@@ -5,6 +5,7 @@
 Here's a list of other related projects where you can find inspiration for
 creating the best possible README for your own project:
 
+[Link](https://academic.oup.com/biostatistics/article/8/1/118/252073/Adjusting-batch-effects-in-microarray-expression)
 - [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 - [A list of awesome READMEs](https://github.com/matiassingers/awesome-readme)
 - [Akash Nimare's kickass README guide](https://gist.github.com/akashnimare/7b065c12d9750578de8e705fb4771d2f)
