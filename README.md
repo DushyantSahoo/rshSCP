@@ -11,8 +11,8 @@ contact: sahoodushyant (at) gmail (dot) com
 
 ## Table of content
 - [1. Overview](#id-section1)
-- [2. Installation](#id-section2)
-- [3. Quick Start](#id-section3)
+- [2. Installation](#Installation)
+- [3. Quick Start](#main-function)
 
 ## Installation
 
