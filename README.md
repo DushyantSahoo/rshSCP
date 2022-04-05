@@ -11,7 +11,7 @@ contact: sahoodushyant@gmail.com
 
 ## Table of content
 - [1. Overview](#id-section1)
-- [2. Installation](#Installation)
+- [2. Installation](#installation)
 - [3. Main function](#main-function)
 
 ## Installation
@@ -21,15 +21,11 @@ Requirements:
 * ``MATLAB``
 * ``MATLAB Deep Learning Toolbox``
 
-# Projection onto the intersection of the L1-ball and L-infinity-ball
+### Projection onto the intersection of the L1-ball and L-infinity-ball
 
-This repository contains a Matlab/Mex/C++ implementation of a linear time algorithm for the projection onto the intersection of the L1-ball and L-infinity-ball (box constraint).
+Projection folder contains a Matlab/Mex/C++ implementation of a linear time algorithm for the projection onto the intersection of the L1-ball and L-infinity-ball (box constraint) provided by A. Podosinnikova.
 
-Please, cite:
-*A. Podosinnikova. Robust Principal Component Analysis as a Nonlinear Eigenproblem. Master's Thesis, Saarland University, Department of Mathematics and Computer Science, 2013.*
-
-
-## Using this code with Matlab
+### Using projection code with Matlab
 
 - make sure your Matlab recognizes your gcc compiler
 ```
