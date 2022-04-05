@@ -7,12 +7,12 @@ MATLAB based tool for extracting hierarchical Sparse Connectivity Patterns (hSCP
 - [3] Dushyant Sahoo et al.Generalizable Hierarchical Patterns for identifying MDD patients: A Multisite Study. (Under Review)
 - [4] Dushyant Sahoo, T. D. Satterthwaite, and Christos Davatzikos. Hierarchical extraction of functional connectivity components in human brain using resting-state fmri. TMI 2020. https://ieeexplore.ieee.org/abstract/document/9285290
 
-contact: sahoodushyant (at) gmail (dot) com
+contact: sahoodushyant@gmail.com
 
 ## Table of content
 - [1. Overview](#id-section1)
 - [2. Installation](#Installation)
-- [3. Quick Start](#main-function)
+- [3. Main function](#main-function)
 
 ## Installation
 
