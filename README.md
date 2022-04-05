@@ -1,39 +1,15 @@
 # Robust Hierarchical Sparse Connectivity Patterns
 
-## Related projects
+MATLAB based tool for extracting hierarchical Sparse Connectivity Patterns (hSCPs) while reducing the effects of covariates such as age, sex and site in multi-site datasets. Implementation of robust principal component analysis and stable principal component pursuit based on the following references:
 
-Here's a list of other related projects where you can find inspiration for
-creating the best possible README for your own project:
-
-[Link](https://academic.oup.com/biostatistics/article/8/1/118/252073/Adjusting-batch-effects-in-microarray-expression)
-- [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [A list of awesome READMEs](https://github.com/matiassingers/awesome-readme)
-- [Akash Nimare's kickass README guide](https://gist.github.com/akashnimare/7b065c12d9750578de8e705fb4771d2f)
-- [Dan Bader's README template](https://github.com/dbader/readme-template)
+contact: sahoodushyant (at) gmail (dot) com
 
 ## Table of content
-- [1. Introduction](#id-section1)
-- [2. Software implementations](#id-section2)
-- [3. Missing values](#id-section3)
-- [4. FAQs](#id-section3)
-- [5. News](#id-section3)
+- [1. Overview](#id-section1)
+- [2. Installation](#id-section2)
+- [3. Quick Start](#id-section3)
 
 **References**: If you are using ComBat for the harmonization of multi-site imaging data, please cite the following papers:
-
-
-
-The `algorithms` bundle provides two environments, `algorithmic` and
-`algorithm`, designed to typeset pseudo-code with LaTeX.
-
-The `algorithmic` package provides an environment for the description of
-algorithms, step-by-step in pseudo-code, while the `algorithm`
-environment provides a `float` wrapper for algorithms to "feature" them
-in the text.
-
-Even though the primary intention is to use them together, it is
-possible to just use one of them at the option of the user.  The reason
-for two environments being provided is to allow the user maximum
-flexibility.
 
 
 ## Installation
@@ -55,20 +31,32 @@ you would like to generate the documentation, just use, say:
 
 ## Development and Support
 
-The source code for the bundle is currently hosted in a `git` repository at
-<https://github.com/rbrito/algorithms>.
-
 The author welcomes any contribution and also tries to address any bugs
 or feature requests that may be filed on the issue tracker at
-<https://github.com/rbrito/algorithms/issues>.
+<https://github.com/DushyantSahoo/rshSCP/issues>.
 
 
-## The License
+Citations
+---------
 
-The algorithms bundle is (currently) licensed under the Lesser GPL
-license, which is a Free Software license. It may, in the future, be
-released under the standard LaTeX license (the LaTeX Project Public
-License).
+Here's a list of other related projects where you can find inspiration for
+creating the best possible README for your own project:
 
+- [Hierarchical extraction of functional connectivity components in human brain using resting-state fMRI](https://ieeexplore.ieee.org/abstract/document/9285290)
+- [Extraction of Hierarchical Functional Connectivity Components in human brain using Adversarial Learning](https://arxiv.org/pdf/2104.10255.pdf)
+- [Learning Robust Hierarchical Patterns of Human Brain across Many fMRI Studies](https://proceedings.neurips.cc/paper/2021/file/f33ba15effa5c10e873bf3842afb46a6-Paper.pdf)
+- [Robust Hierarchical Patterns for identifying MDD
+patients: A Multisite Study](https://arxiv.org/pdf/2202.11144.pdf)
 
- -- Rogério Brito <rbrito@ime.usp.br>  Wed, 08 Nov 2017 05:23:56 -0200
+.. [1] Pomponio, R., Shou, H., Davatzikos, C., et al., (2019).
+   "Harmonization of large MRI datasets for the analysis of brain imaging
+   patterns throughout the lifespan." Neuroimage 208.
+   https://doi.org/10.1016/j.neuroimage.2019.116450.
+.. [2] Fortin, J. P., N. Cullen, Y. I. Sheline, W. D. Taylor, I. Aselcioglu,
+   P. A. Cook, P. Adams, C. Cooper, M. Fava, P. J. McGrath, M. McInnis,
+   M. L. Phillips, M. H. Trivedi, M. M. Weissman and R. T. Shinohara (2017).
+   "Harmonization of cortical thickness measurements across scanners and sites."
+   Neuroimage 167: 104-120. https://doi.org/10.1016/j.neuroimage.2017.11.024.
+.. [3] W. Evan Johnson and Cheng Li, Adjusting batch effects in microarray
+   expression data using empirical Bayes methods. Biostatistics, 8(1):118-127,
+   2007. https://doi.org/10.1093/biostatistics/kxj037.
