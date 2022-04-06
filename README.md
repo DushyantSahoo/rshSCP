@@ -60,15 +60,15 @@ Below are the inputs to the above function
 
 [6] tol is the % change in the error before gradient descent stops
 
-[7] site variable stores the index 
+[7] site variable stores the site indices of each subject
 
 [8] gamma_predict is the weightage given to classification loss
 
 [9] gamma_cross is the weightage given to robustness loss
 
-[10] mdd is a binary variable storing information about a su
+[10] mdd is a binary variable storing information about whether a subject is healthy or patient
 
-[11] age and sex 
+[11] age and sex store demograhic information of each subject
 
 There are three outputs-
 [1] W stores components at different levels in cell format
@@ -78,7 +78,7 @@ There are three outputs-
 [3] error stores % information captured by the decomposition; ideally it should be decreasing with the iterations.
  
 
-MATLAB for simulating data and running the code is also given, which would give the user an idea of the input parameters and how the output looks. Please refer to the "Hierarchical extraction of functional connectivity components in human brain using resting-state fMRI" paper for more details. I am thankful to Anastasia for providing me with the code for projection operators.
+A test script using simulated data is also provided, which would give the user an idea of the input parameters and how the output looks. Please refer to the papers for more details. I am thankful to Anastasia for providing me with the code for projection operators.
 
 ## Development and Support
 
