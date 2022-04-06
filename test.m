@@ -47,7 +47,9 @@ corre = cell(N,1);
 for i =1:N
 
     temp = new_W1*W2*diag(lambda2{i}) *transpose(new_W1*W2);
-    corre{i}=nearcorr(temp,6000000*eps,0,1000);
+    temp = diag(1./sqrt(diag(temp)))*temp*diag(1./sqrt(diag(temp)));
+    temp = (temp + temp')/2;
+    corre{i}=temp;
 
 end
 
@@ -61,10 +63,10 @@ k = [p,10,5];
 alpha = [0.1,0.1];
 
 % randomly generate age, sex and site information
-mdd = randi([1 2],N);
-sex = randi([1 2],N);
-site = randi([1 5],N);
-age = rand([20 50],N);
+mdd = randi([1 2],N,1);
+sex = randi([1 2],N,1);
+site = randi([1 5],N,1);
+age = (50-20).*rand(N,1) + 20;
 loop = 1000;
 
 eps = 10^-8;
@@ -79,4 +81,4 @@ gamma_predict = .5;
 gamma_cross = .5;
 eta = 0.01;
 
-[W_correc_a, lambda_correc_train, error_correc,C_correc,ld_correc,dlnet_predict,dlnet_correct,acc_train] = rhscp_learn(total_data,k,alpha,loop,eta,beta1,beta2,eps,tol,site,gamma_predict,gamma_cross,mdd,age,sex);
+[W_correc_a, lambda_correc_train, error_correc,C_correc,ld_correc,dlnet_predict,dlnet_correct,acc_train] = rhscp_learn(corre',k,alpha,loop,eta,beta1,beta2,eps,tol,site,gamma_predict,gamma_cross,mdd,age,sex);
