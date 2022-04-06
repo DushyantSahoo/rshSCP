@@ -44,47 +44,39 @@ example_projection.m
 
 The current implementation requires a positive semi-definite symmetric matrix, for example, a correlation matrix as an input. Below is the main function and description of input and output. 
 
-```[W, lambda, error] = hscp_amsgrad(A,k,alpha,loop,eta,beta1,beta2,eps,tole,svd_check)```
+```[W, lambda, error, C, ld, dlnet_predict, dlnet_correct, acc_train] = rhscp_learn(A,k,alpha,loop,eta,beta1,beta2,eps,tol,site,gamma_predict,gamma_cross,mdd,age,sex)```
 
 Below are the inputs to the above function
 
-1) A contains the input matrices in a cell format, for example- A{1}, A{2}, ....
+[1] A contains the input matrices in a cell format, for example- A{1}, A{2}, ....
 
-2) k contains the number of components in each hierarchy, for example, k = [120,20,4], where 120 is the number of nodes in data or the size of the input matrix
- 20 is the number of components at level 1,
- 4 is the number of components at level 2.
- k can also be [120,10] having only one level or [120,40,20,4] having
- three levels
+[2] k contains the number of components in each hierarchy, for example, k = [120,20,4], where 120 is the number of nodes in data or the size of the input matrix 20 is the number of components at level 1, 4 is the number of components at level 2. k can also be [120,10] having only one level or [120,40,20,4] having three levels.
 
-3) alpha is the sparsity level of components at each level; users will
- have to play with it a little bit to get a balance between sparsity in
- the components and good approximation error.
- If k = [120,20,4] then alpha can be [1,1] i.e. sparsity for each level
+[3] alpha is the sparsity level of components at each level; users will have to play with it a little bit to get a balance between sparsity in the components and good approximation error. If k = [120,20,4] then alpha can be [1,1] i.e. sparsity for each level
 
- 4) loop is the number of iterations of gradient descent
+[4] loop is the number of iterations of gradient descent
 
- 5) eta, beta1, beta2, eps are the hyperparameters for amsgrad
+[5] eta, beta1, beta2, eps are the hyperparameters for amsgrad
 
- 6) tole is the % change in the error before gradient descent stops
+[6] tol is the % change in the error before gradient descent stops
 
- 7) svd_check is used for initializing the algorithm with SVD; details are
- given in the main paper
+[7] site variable stores the index 
+
+[8] gamma_predict is the weightage given to classification loss
+
+[9] gamma_cross is the weightage given to robustness loss
+
+[10] mdd is a binary variable storing information about a su
+
+[11] age and sex 
+
+There are three outputs-
+[1] W stores components at different levels in cell format
+
+[2] lambda stores subject specific information
+
+[3] error stores % information captured by the decomposition; ideally it should be decreasing with the iterations.
  
- Below are the typical hyperparameter settings that would work-
- 1) svd_check = 1
- 2) loop = 6000
- 3) eta = 0.1
- 4) beta1 = 0.99
- 5) beta2 = 0.999
- 6) eps = 10^-8
- 7) tol1 = 10^(-4)
-
- There are three outputs-
- 1) W stores components at different levels in cells, each cell of W will
- store components at each level
- 2) lambda stores subject specific information in a cell
- 3) error stores % information captured by the decomposition; ideally it
- should be decreasing with the iterations.
 
 MATLAB for simulating data and running the code is also given, which would give the user an idea of the input parameters and how the output looks. Please refer to the "Hierarchical extraction of functional connectivity components in human brain using resting-state fMRI" paper for more details. I am thankful to Anastasia for providing me with the code for projection operators.
 
